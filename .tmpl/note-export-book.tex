@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[a4paper,textwidth=40em,vmargin=27mm]{geometry}
+\usepackage{calc}
+\usepackage{calc}
+\usepackage{indentfirst,tocloft,datetime2,paralist,enumitem,listings,titling,lastpage,tabu,booktabs,eso-pic,graphicx,tikz}
+\usepackage[PunctStyle=plain,RubberPunctSkip=false,CJKglue=\hskip 0pt,CJKecglue=\hskip 4pt plus 10pt]{xeCJK}
+% =========================================
+\usepackage{xeCJKfntef}
+\setmainfont{Latin Modern Roman}
+\setromanfont{Latin Modern Roman}
+\setsansfont{Inter}
+\setmonofont{IBM Plex Mono}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKromanfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+% =========================================
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+
+
+\newcommand{\NoteTitle}[3]{
+    % argv: date / category / title
+    \clearpage
+    \begin{minipage}{\linewidth}
+        \parskip=12pt
+        \LARGE
+        #3\par
+        \small\sffamily
+        Date: #1\hskip 4em Category: #2\par
+        \phantomsection
+        \addcontentsline{toc}{chapter}{#3}
+    \end{minipage}\par
+    \vskip 15pt\hrule
+    \vskip 20pt
+}
+
+
+
+\title{BOOKNAME}
+\author{Notebook Export}
+\date{\today}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents\clearpage
+
+09be2d6729c44c5598b706c077f64b5f
+\end{document}
